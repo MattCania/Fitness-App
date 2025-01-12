@@ -1,22 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom';
 
-export default function LandingHeader() {
+export default function CaptureHeader() {
 
 	return (
 
 		<header
-			className='flex justify-between w-full h-10 border-b border-b-gray-600 px-40'
+			className='flex justify-center w-full h-10 border-b gap-96 border-b-gray-600'
 		>
 			<div
 				className='flex justify-start items-center h-full w-auto'
 			>
-				<a
+				<Link
 					className='flex justify-center items-center w-36 text-teal-400 text-2xl font-bold'
-					href="/"
+					to="/"
 				>
 					Git Fit
-				</a>
+				</Link>
 				<button
 					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
 				>
@@ -45,16 +46,16 @@ export default function LandingHeader() {
 			<div
 				className='flex justify-start items-center h-full w-auto gap-2'
 			>
-				<a href='/'
+				<Link to='/'
 					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
 				>
 					Contact Us
-				</a>
-				<a href='/'
+				</Link>
+				<Link to='login'
 					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
 				>
 					Try it now
-				</a>
+				</Link>
 			</div>
 
 		</header>
