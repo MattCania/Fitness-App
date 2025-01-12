@@ -51,7 +51,7 @@ export default function CaptureHeader() {
 				>
 					Contact Us
 				</Link>
-				<Link to='login'
+				<Link to='register'
 					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
 				>
 					Try it now
