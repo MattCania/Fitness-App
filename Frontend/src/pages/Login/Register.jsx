@@ -1,8 +1,13 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useState } from "react";
 
 export default function Register() {
+	const [selectedOption, setSelectedOption] = useState("option1");
 
+	const handleChange = (event) => {
+		setSelectedOption(event.target.value);
+	};
 	return (
 
 		<section
@@ -18,7 +23,7 @@ export default function Register() {
 					Try Premium
 				</h1>
 				<p
-					className='flex justify-start items-start flex-wrap text-wrap text-teal-400 text-lg w-full h-auto font-sans font-medium'
+					className='flex justify-start items-start flex-wrap text-wrap text-teal-400 text-lg w-11/12 h-auto font-sans font-medium'
 
 				>
 					GitFit, is a goal setter primarily for programmers alike.
@@ -68,7 +73,7 @@ export default function Register() {
 						Name:
 					</label>
 					<input
-						className='w-3/4 h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2'
+						className='w-3/4 h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2 transition-all duration-500'
 						type="text"
 						name="name"
 						id="name"
@@ -82,18 +87,20 @@ export default function Register() {
 						Email:
 					</label>
 					<input
-						className='w-3/4 h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2'
+						className='w-3/4 h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2 transition-all duration-500'
 						type="email"
 						name="email"
 						id="email"
 						placeholder='Email123@gmail.com'
 					/>
 
+					<hr className="w-3/4 border-1 border-teal-900 my-4" />
+
 					<div
 						className='flex justify-center items-center w-3/4 gap-4'
 					>
 						<div
-							className='flex flex-col justify-center items-center w-full'
+							className='flex flex-col justify-center items-center w-full h-full'
 						>
 							<label
 								className='flex justify-start items-center w-full h-auto m-2 text-teal-400'
@@ -102,29 +109,95 @@ export default function Register() {
 								Age:
 							</label>
 							<input
-								className='w-full h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2'
+								className='w-full h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2 transition-all duration-500'
 								type="number"
 								name="age"
 								id="age"
 							/>
-						</div>
-						<div
-							className='flex flex-col justify-center items-center w-full'
-						>
 							<label
 								className='flex justify-start items-center w-full h-auto m-2 text-teal-400'
-								htmlFor="age"
+								htmlFor="weight"
 							>
 								Weight (kg):
 							</label>
 							<input
-								className='w-full h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2'
+								className='w-full h-10 bg-transparent text-white hover:shadow-teal-600 border border-teal-400 rounded-sm outline-none shadow-md focus:shadow-teal-400 px-2 transition-all duration-500'
 								type="number"
 								name="weight"
 								id="weight"
 							/>
 						</div>
+						<div
+							className='flex flex-col justify-start items-center w-full h-full'
+						>
+							<div
+								className='flex justify-start items-start flex-col gap-1 w-3/4 h-full'
+							>
+								<h1
+									className='text-lg text-teal-400'
+								>
+									Choose a Plan:
+								</h1>
+
+								<div
+									className='flex justify-start items-center h-4 w-full'
+								>
+									<input type="radio" name="plan" id="planA"
+										className='cursor-pointer bg-black'
+									/>
+									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planA">Free</label>
+								</div>
+								<div
+									className='flex justify-start items-center h-4 w-full'
+								>
+									<input type="radio" name="plan" id="planB"
+										className='cursor-pointer bg-black'
+									/>
+									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planB">1 Month</label>
+								</div>
+								<div
+									className='flex justify-start items-center h-4 w-full'
+								>
+									<input type="radio" name="plan" id="planC"
+										className='cursor-pointer bg-black'
+									/>
+									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planC">6 Month</label>
+								</div>
+								<div
+									className='flex justify-start items-center h-4 w-full'
+								>
+									<input type="radio" name="plan" id="planD"
+										className='cursor-pointer bg-black'
+									/>
+									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planD">1 Year</label>
+								</div>
+							</div>
+
+						</div>
 					</div>
+
+					<hr className="w-3/4 border-1 border-teal-900 my-4" />
+					<div
+						className='flex flex-col justify-start items-center my-4 w-3/4 h-1/3 '
+					>
+						<label htmlFor="goal"
+							className='flex justify-start items-center w-11/12 text-teal-400 m-1 '
+						>
+							What's the goal you plan to accomplish?
+							</label>
+
+						<div
+							className="flex justify-start items-center w-11/12 h-3/4"
+						>
+
+							<textarea
+								className="h-full w-full resize-none bg-transparent text-teal-400 outline-none border border-teal-800 p-1"
+							name="" id=""></textarea>
+							
+						</div>
+
+					</div>
+
 				</form>
 			</div>
 		</section>

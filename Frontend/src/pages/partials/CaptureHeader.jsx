@@ -13,31 +13,31 @@ export default function CaptureHeader() {
 				className='flex justify-start items-center h-full w-auto'
 			>
 				<Link
-					className='flex justify-center items-center w-36 text-teal-400 text-2xl font-bold'
+					className='flex justify-center items-center w-36 text-teal-400 text-2xl font-bold '
 					to="/"
 				>
 					Git Fit
 				</Link>
 				<button
-					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-500'
 				>
 					Services
 					<FontAwesomeIcon icon={faCaretDown} />
 				</button>
 				<button
-					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-200'
 				>
 					Products
 					<FontAwesomeIcon icon={faCaretDown} />
 				</button>
 				<button
-					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-200'
 				>
 					About Us
 					<FontAwesomeIcon icon={faCaretDown} />
 				</button>
 				<a href='/'
-					className='flex justify-center items-center w-auto px-4 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-auto px-4 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-200'
 				>
 					Blog
 				</a>
@@ -47,12 +47,12 @@ export default function CaptureHeader() {
 				className='flex justify-start items-center h-full w-auto gap-2'
 			>
 				<Link to='/'
-					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-200'
 				>
 					Contact Us
 				</Link>
 				<Link to='register'
-					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800'
+					className='flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-teal-400 hover:text-gray-800 transition-all duration-200'
 				>
 					Try it now
 				</Link>
