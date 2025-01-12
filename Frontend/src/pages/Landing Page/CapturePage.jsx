@@ -3,7 +3,7 @@ export default function CapturePage () {
 
 	return (
 		<section
-			className='flex flex-col justify-start items-center h-full w-full py-4'
+			className='flex flex-col justify-start items-center h-screen w-full py-4 gap-4 overflow-x-hidden overflow-y-auto'
 		>
 			<div
 				className='flex flex-col justify-center items-center h-64 w-1/2 rounded-xl border border-teal-400 shadow-md shadow-teal-400'
@@ -17,11 +17,15 @@ export default function CapturePage () {
 					className='text-xl text-white'
 				>
 					Manage your career, goals, and health!
-
 				</p>
 			</div>
 
+			<div 
+				className='flex flex-col justify-center items-center h-[100vh] w-4/5 border-x-2 border-teal-400'
+			>
 
+
+			</div>
 
 		</section>
 	)

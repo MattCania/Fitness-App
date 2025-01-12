@@ -7,11 +7,11 @@ export default function CaptureRouter() {
 
 	return (
 		<div
-			className='flex flex-col justify-start items-center w-screen h-screen bg-zinc-950'
+			className='flex flex-col justify-start items-center w-screen h-screen bg-zinc-950 overflow-hidden'
 		>
 			<CaptureHeader />
 			<section
-				className='flex flex-col justify-center items-start w-full h-full'
+				className='flex flex-col justify-center items-start w-full h-auto overflow-x-hidden'
 			>
 				<Routes>
 					<Route path="/" element={<CapturePage />} />
