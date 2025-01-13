@@ -131,7 +131,7 @@ export default function Register() {
 							className='flex flex-col justify-start items-center w-full h-full'
 						>
 							<div
-								className='flex justify-start items-start flex-col gap-1 w-3/4 h-full'
+								className='flex justify-start items-start flex-col gap-2 w-3/4 h-full'
 							>
 								<h1
 									className='text-lg text-teal-400'
@@ -143,33 +143,69 @@ export default function Register() {
 									className='flex justify-start items-center h-4 w-full'
 								>
 									<input type="radio" name="plan" id="planA"
-										className='cursor-pointer bg-black'
+										className='hidden peer'
 									/>
-									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planA">Free</label>
+										<label 
+											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
+											htmlFor="planA"
+										>
+											Free
+										</label>
+									<div 
+										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
+									> </div>
 								</div>
+
 								<div
 									className='flex justify-start items-center h-4 w-full'
 								>
 									<input type="radio" name="plan" id="planB"
-										className='cursor-pointer bg-black'
+										className='hidden peer'
 									/>
-									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planB">1 Month</label>
+										<label 
+											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
+											htmlFor="planB"
+										>
+											1 Month
+										</label>
+									<div 
+										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
+									> </div>
 								</div>
+
 								<div
 									className='flex justify-start items-center h-4 w-full'
 								>
 									<input type="radio" name="plan" id="planC"
-										className='cursor-pointer bg-black'
+										className='hidden peer'
 									/>
-									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planC">6 Month</label>
+										<label 
+											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
+											htmlFor="planC"
+										>
+											6 Months
+										</label>
+									<div 
+										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
+									> </div>
 								</div>
+
 								<div
 									className='flex justify-start items-center h-4 w-full'
 								>
 									<input type="radio" name="plan" id="planD"
-										className='cursor-pointer bg-black'
+										className='hidden peer'
 									/>
-									<label className='flex justify-start items-center text-teal-400 mx-2 text-md' htmlFor="planD">1 Year</label>
+										<label 
+											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
+											htmlFor="planD"
+										>
+											1 Year
+											
+											</label>
+									<div 
+										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
+									> </div>
 								</div>
 							</div>
 
@@ -184,7 +220,7 @@ export default function Register() {
 							className='flex justify-start items-center w-11/12 text-teal-400 m-1 '
 						>
 							What's the goal you plan to accomplish?
-							</label>
+						</label>
 
 						<div
 							className="flex justify-start items-center w-11/12 h-3/4"
@@ -192,8 +228,10 @@ export default function Register() {
 
 							<textarea
 								className="h-full w-full resize-none bg-transparent text-teal-400 outline-none border border-teal-800 p-1"
-							name="" id=""></textarea>
-							
+								name="" id="">
+
+							</textarea>
+
 						</div>
 
 					</div>

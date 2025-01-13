@@ -1,4 +1,7 @@
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+
 export default function CapturePage() {
 	return (
 		<section
@@ -31,6 +34,13 @@ export default function CapturePage() {
 				className="flex flex-col justify-center items-center w-4/5 border-x-2 border-teal-400"
 				style={{ minHeight: "100%", height: 'auto' }}
 			>
+
+				<div
+					className='relative'
+				>
+
+				</div>
+
 			</div>
 		</section>
 	);
