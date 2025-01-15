@@ -233,7 +233,10 @@ export default function Register() {
 							</textarea>
 
 						</div>
-
+						<input
+								className='flex justify-center items-center cursor-pointer w-32 h-10 my-2 rounded-md gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-teal-400 hover:text-gray-800 transition-all duration-200'
+				
+						type="submit" value="Continue" />
 					</div>
 
 				</form>
