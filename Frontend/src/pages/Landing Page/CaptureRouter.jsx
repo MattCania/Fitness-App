@@ -16,8 +16,8 @@ export default function CaptureRouter() {
 			>
 				<Routes>
 					<Route path="/" element={<CapturePage />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="/register" element={<Register />} />
+					<Route path="login" element={<Login />} />
+					<Route path="register" element={<Register />} />
 				</Routes>
 			</section>
 

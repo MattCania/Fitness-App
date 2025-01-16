@@ -31,14 +31,14 @@ export default function CaptureHeader() {
 			style={{ height: activeDropdown !== null ? '16rem' : '2.5rem' }}
 		>
 			<div className="flex justify-center items-center w-full h-10 gap-96">
-				<div className="flex justify-start items-center h-10 w-auto">
+				<div className="flex justify-start items-center h-10 gap-2 w-auto">
 					<Link className="flex justify-center items-center w-36 text-teal-400 text-2xl font-bold" to="/">
 						Git Fit
 					</Link>
 					{headerButtons.map((item, index) => (
 						<button
 							key={index}
-							className="flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none focus:outline-1 focus:outline-teal-400 hover:bg-gray-800 transition-all duration-500"
+							className="flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-white rounded-lg outline-none hover:outline-1 hover:outline-teal-400 hover:bg-gray-800 transition-all duration-500"
 							onClick={() => toggleMenu(index)}
 						>
 							{item.label}
@@ -61,7 +61,7 @@ export default function CaptureHeader() {
 						Contact Us
 					</Link>
 					<Link
-						to="register"
+						to="/blog/register"
 						className="flex justify-center items-center w-32 h-4/5 gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-teal-400 hover:text-gray-800 transition-all duration-200"
 					>
 						Try it now

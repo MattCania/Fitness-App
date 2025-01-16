@@ -1,6 +1,7 @@
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Register() {
 	const [selectedOption, setSelectedOption] = useState("option1");
@@ -52,6 +53,20 @@ export default function Register() {
 						Career based goal Setter
 					</li>
 				</ul>
+				<div>
+					<p
+						className='flex justify-start items-center w-full h-auto text-teal-400 gap-1'
+					>
+						Already Subscribed?
+						<Link
+							className='transition-all duration-200 underline hover:text-teal-600'
+							to='/blog/login'
+						>
+							Login
+						</Link>
+					</p>
+
+				</div>
 			</div>
 			<div
 				className='flex flex-col justify-center items-start w-2/5 h-full rounded-md shadow-md shadow-teal-400 border border-teal-400'
@@ -145,13 +160,13 @@ export default function Register() {
 									<input type="radio" name="plan" id="planA"
 										className='hidden peer'
 									/>
-										<label 
-											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
-											htmlFor="planA"
-										>
-											Free
-										</label>
-									<div 
+									<label
+										className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer'
+										htmlFor="planA"
+									>
+										Free
+									</label>
+									<div
 										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
 									> </div>
 								</div>
@@ -162,13 +177,13 @@ export default function Register() {
 									<input type="radio" name="plan" id="planB"
 										className='hidden peer'
 									/>
-										<label 
-											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
-											htmlFor="planB"
-										>
-											1 Month
-										</label>
-									<div 
+									<label
+										className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer'
+										htmlFor="planB"
+									>
+										1 Month
+									</label>
+									<div
 										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
 									> </div>
 								</div>
@@ -179,13 +194,13 @@ export default function Register() {
 									<input type="radio" name="plan" id="planC"
 										className='hidden peer'
 									/>
-										<label 
-											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
-											htmlFor="planC"
-										>
-											6 Months
-										</label>
-									<div 
+									<label
+										className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer'
+										htmlFor="planC"
+									>
+										6 Months
+									</label>
+									<div
 										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
 									> </div>
 								</div>
@@ -196,14 +211,14 @@ export default function Register() {
 									<input type="radio" name="plan" id="planD"
 										className='hidden peer'
 									/>
-										<label 
-											className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer' 
-											htmlFor="planD"
-										>
-											1 Year
-											
-											</label>
-									<div 
+									<label
+										className='flex justify-start items-center w-full text-teal-400 text-md px-6 cursor-pointer'
+										htmlFor="planD"
+									>
+										1 Year
+
+									</label>
+									<div
 										className="absolute h-3 w-3 outline-4 outline-double outline-teal-400 rounded-full bg-transparent border border-teal-400 transition-all peer-checked:bg-teal-400 peer-checked:border-double"
 									> </div>
 								</div>
@@ -234,9 +249,9 @@ export default function Register() {
 
 						</div>
 						<input
-								className='flex justify-center items-center cursor-pointer w-32 h-10 my-2 rounded-md gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-teal-400 hover:text-gray-800 transition-all duration-200'
-				
-						type="submit" value="Continue" />
+							className='flex justify-center items-center cursor-pointer w-32 h-10 my-2 rounded-md gap-2 font-medium text-teal-400 border border-teal-400 outline-none focus:outline-1 focus:outline-teal-400 hover:bg-teal-400 hover:text-gray-800 transition-all duration-200'
+
+							type="submit" value="Continue" />
 					</div>
 
 				</form>
