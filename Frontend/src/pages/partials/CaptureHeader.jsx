@@ -32,7 +32,7 @@ export default function CaptureHeader() {
 		>
 			<div className="flex justify-center items-center w-full h-10 gap-96">
 				<div className="flex justify-start items-center h-10 gap-2 w-auto">
-					<Link className="flex justify-center items-center w-36 text-teal-400 text-2xl font-bold" to="/">
+					<Link className="flex justify-center items-center w-36 text-teal-400 text-2xl font-bold" to="/blog">
 						Git Fit
 					</Link>
 					{headerButtons.map((item, index) => (
